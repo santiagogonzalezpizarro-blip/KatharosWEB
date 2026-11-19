@@ -100,4 +100,42 @@ footer{background:var(--graphite);color:#c7d0d9;padding:34px 0}.footer-grid{disp
   margin: 0;
   color: #1f2933;
   line-height: 1.7;
+}.download-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.download-card {
+  padding: 1.5rem;
+  border: 1px solid #d9e2ec;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.download-card h3 {
+  margin-top: 0;
+  color: #102a43;
+}
+
+.download-card.upcoming {
+  background: #f4f6f8;
+}
+
+.download-meta {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #1f2933;
+}
+
+.download-note {
+  margin-top: 1.5rem;
+  color: #1f2933;
+}
+
+@media (max-width: 700px) {
+  .download-grid {
+    grid-template-columns: 1fr;
+  }
 }
