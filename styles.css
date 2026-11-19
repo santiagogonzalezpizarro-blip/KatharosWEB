@@ -66,4 +66,38 @@ footer{background:var(--graphite);color:#c7d0d9;padding:34px 0}.footer-grid{disp
   margin-top: 1rem;
   color: #20a36a;
   font-weight: 600;
+}.faq-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.faq-list details {
+  background: #ffffff;
+  border: 1px solid #d9e2ec;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: #102a43;
+  line-height: 1.5;
+}
+
+.faq-list summary:focus-visible {
+  outline: 3px solid #1877f2;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.faq-list details[open] summary {
+  margin-bottom: 0.75rem;
+}
+
+.faq-list p {
+  margin: 0;
+  color: #1f2933;
+  line-height: 1.7;
 }
