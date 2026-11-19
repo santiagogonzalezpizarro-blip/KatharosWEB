@@ -24,4 +24,46 @@ section{padding:64px 0}.section-alt{background:var(--light)}h2{font-size:clamp(1
 footer{background:var(--graphite);color:#c7d0d9;padding:34px 0}.footer-grid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}.footer-links{display:flex;gap:16px;flex-wrap:wrap}.footer-links a{color:#fff}.small{font-size:.9rem;color:var(--muted)}
 .page-hero{background:var(--primary);color:#fff;padding:52px 0}.page-hero h1{margin:0;color:#fff}.page-content{padding:52px 0}.page-content h2{font-size:1.55rem;margin-top:2rem}.page-content h3{color:var(--primary);margin-top:1.6rem}.checklist li{margin:.4rem 0}
 @media(max-width:850px){.hero-grid,.grid-3,.grid-2,.steps,.doc-list{grid-template-columns:1fr}.nav{align-items:flex-start;padding:14px 0}.nav-links{justify-content:flex-end}.hero{padding-top:44px}.hero-card{order:-1}.steps{gap:12px}}
-@media(max-width:600px){.nav{flex-direction:column}.nav-links{gap:12px}.hero h1{font-size:2.6rem}section{padding:48px 0}.actions .btn{width:100%}}
+@media(max-width:600px){.nav{flex-direction:column}.nav-links{gap:12px}.hero h1{font-size:2.6rem}section{padding:48px 0}.actions .btn{width:100%}}.terms-acceptance {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #d9e2ec;
+  border-radius: 12px;
+  background: #f4f6f8;
+}
+
+.terms-acceptance label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+  color: #1f2933;
+}
+
+.terms-acceptance input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.terms-acceptance button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  background: #1877f2;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.terms-acceptance button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+#acceptanceMessage {
+  margin-top: 1rem;
+  color: #20a36a;
+  font-weight: 600;
+}
