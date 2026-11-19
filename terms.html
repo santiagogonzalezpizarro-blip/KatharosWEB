@@ -1,4 +1,19 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Términos y condiciones | Katharos</title><link rel="stylesheet" href="styles.css"></head><body>
+<!doctype html><html lang="es"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Términos y Condiciones de Uso de Katharos para un uso legal, autorizado y responsable del software.">
+
+    <title>Términos y Condiciones | Katharos</title>
+
+    <meta property="og:title" content="Términos y Condiciones | Katharos">
+    <meta property="og:description" content="Consulta las condiciones de uso autorizado, responsabilidades y usos prohibidos de Katharos.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="katharos-brand.png.png">
+
+    <link rel="icon" type="image/png" href="katharos-brand.png.png">
+    <link rel="stylesheet" href="styles.css">
+</head><body>
 <header><div class="container nav"><a class="brand" href="index.html">Katharos</a><nav class="nav-links"><a href="index.html">Inicio</a><a href="privacy.html">Privacidad</a><a href="disclaimer.html">Limitaciones</a></nav></div></header>
 <section class="page-hero"><div class="container"><h1>Términos y Condiciones de Uso</h1><p>Uso legal, autorizado y responsable de Katharos</p></div></section>
 <main class="container page-content">
@@ -10,5 +25,32 @@
 <h2>4. Responsabilidad del usuario</h2><p>El usuario es responsable de seleccionar correctamente los elementos, contar con autorización, conservar copias de seguridad necesarias y cumplir las políticas internas y leyes aplicables.</p>
 <h2>5. Uso organizacional</h2><p>Cuando Katharos se utilice dentro de una organización, el usuario deberá respetar sus políticas de conservación documental, seguridad, protección de datos y eliminación de información.</p>
 <h2>6. Prevención del uso indebido</h2><p>El proyecto contempla aceptación de términos, declaración explícita de autorización, advertencias antes de operaciones irreversibles, mecanismos de confirmación y generación de información sobre el procedimiento.</p>
-<h2>7. Aceptación</h2><p><strong>[ ] He leído y acepto los Términos y Condiciones de Uso de Katharos.</strong></p>
-</main><footer><div class="container"><a href="index.html" style="color:white">Volver a la landing</a></div></footer></body></html>
+<h2>7. Aceptación</h2><div class="terms-acceptance">
+  <label for="acceptTerms">
+    <input type="checkbox" id="acceptTerms">
+    He leído y acepto los Términos y Condiciones de Uso de Katharos.
+  </label>
+
+  <button type="button" id="continueButton" disabled>
+    Aceptar y continuar
+  </button>
+
+  <p id="acceptanceMessage" aria-live="polite"></p>
+</div>
+</main><footer><div class="container"><a href="index.html" style="color:white">Volver a la landing</a></div></footer><script>
+  const checkbox = document.getElementById('acceptTerms');
+  const button = document.getElementById('continueButton');
+  const message = document.getElementById('acceptanceMessage');
+
+  checkbox.addEventListener('change', function () {
+    button.disabled = !checkbox.checked;
+
+    if (!checkbox.checked) {
+      message.textContent = '';
+    }
+  });
+
+  button.addEventListener('click', function () {
+    message.textContent = 'Has aceptado los Términos y Condiciones de Uso de Katharos.';
+  });
+</script></body></html>
