@@ -138,4 +138,22 @@ footer{background:var(--graphite);color:#c7d0d9;padding:34px 0}.footer-grid{disp
   .download-grid {
     grid-template-columns: 1fr;
   }
+}/* Ajustes finales de accesibilidad y contraste */
+
+a {
+  color: #102a43;
+}
+
+.btn-primary,
+.terms-acceptance button {
+  background: #102a43;
+  color: #ffffff;
+}
+
+#acceptanceMessage {
+  margin-top: 1rem;
+  color: #102a43;
+  font-weight: 600;
+  border-left: 4px solid #20a36a;
+  padding-left: 0.75rem;
 }
